@@ -1,0 +1,199 @@
+/* The CSS Styling is a bit of a mess I understand, I usually do this in any front-end project I work on. I will clean it up in the future. 
+For purposes of the project, the styling is a little messy but it's better than having it as a style prop and making it look unclean, this might
+also cause issues with other devices and other aspect ratios, but it works and styling isn't important, so if you're having issues on your device
+please, I apologise */
+
+:root {
+    --main-bg-color: black;
+    --text-color: white;
+    --header-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    --box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+td {
+    color: black;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    width: 100%; 
+    display: flex; 
+    align-content: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center; 
+    padding-bottom: 250px;
+}
+
+.image-container__header {
+    text-align: center;
+    position: relative;
+
+    z-index: 1;
+    text-shadow: var(--header-shadow);
+}
+
+.image-container__header h1 {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.imageContainer img{
+    /*Brightness is a lil down to make the header more readable over the image */
+    filter: brightness(50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.table {
+    width: 50%;
+    padding-top: 25px;
+}
+
+.banner {
+    background-color: #eef6ef; 
+    width: 45%; 
+    height: 200px; 
+    margin-top: 50px; 
+    border-radius: 15px; 
+    justify-content: center; 
+    display: flex; 
+    align-items: center;
+}
+
+.banner h1 {
+    color: #0b3a2e; 
+    font-size: 3rem;
+}
+
+.box {
+    width: 100vh;
+    left: 50%;
+
+    background-color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: var(--box-shadow);
+    z-index: 1; /* Ensure the box is above the image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.box h1 {
+    color:#0b3a2e;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.box h3 {
+    color:#65c030;
+    margin-bottom: 3rem;
+}
+
+.box p {
+    color:#0b3a2e;
+    padding-left: 175px;
+    padding-right: 175px;
+    margin-bottom: 2rem;
+    font-size: large;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.box__footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #135344;
+    color: #fff;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.box__footer p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.box__footer a {
+    color: white;
+    font-weight: bold;
+}
+
+.table {
+    width: 50%;
+    margin-top: 50px;
+    border-collapse: collapse; 
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: center; 
+    border: 1px solid #ddd; 
+}
+
+.table th {
+    background-color: #0b3a2e; 
+    color: white;
+}
+
+.table td {
+    background-color: #eef6ef; 
+    color: black; 
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef6ef;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+
+}
+
+.body__owner {
+    overflow-y: hidden; 
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+
+
